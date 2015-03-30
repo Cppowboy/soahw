@@ -18,6 +18,7 @@ def users(request):
     return HttpResponse("Users Page")
 
 def access(request):
+    '''
     if request.GET.has_key('code'):
         data={'client_id':client_id, 'client_secret':client_secret,\
                  'grant_type':'authorization_code', 'redirect_uri':'http://101.200.81.62/access/',\
@@ -33,6 +34,21 @@ def access(request):
         return HttpResponse(response.status)
     else:
         return HttpResponse('can not find code')
+    '''
+    if request.GET.has_key('code'):
+        data={'grant_type':'authorization_code', 'redirect_uri':'http://101.200.81.62/access/',\
+              'code':request.GET['code']}
+        host='api.weibo.com'
+        url='/oauth2/access_token'
+        para=urllib.urlencode(data)
+        headers={'client_id':client_id, 'client_secret':client_secret}
+        addr=socket.gethostbyname(host)
+        con=httplib.HTTPConnection(addr)
+        con.request('POST',url,para,headers)
+        response=con.getresponse()
+        return HttpResponse(response.status)
+    else:
+        return HttpResponse('can not find code')    
 
 def posts(request):
     return HttpResponse('Post Page')
