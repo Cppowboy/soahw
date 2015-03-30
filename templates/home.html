@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>soa homework</title>
+    </head>
+    This is my soa homework.</br>
+    You can find the <a href="/users">users' list</a>.</br>
+    Or get the <a href="/posts">recent posts of someone</a></br>
+    Here you can login with your weibo account.</br>
+    <script>
+        function jump()
+        {
+            var url='https://api.weibo.com/oauth2/authorize?client_id={{client_id}}&response_type={{response_type}}&redirect_uri={{redirect_uri}}';
+            window.location=url;
+        }
+    </script>
+    <button onclick="jump()">log in with weibo</button>
+</html>

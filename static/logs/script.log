@@ -1,0 +1,599 @@
+2015-03-29 09:24:39,208 [Thread-2:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 31, in access
+    +'&code='+request[code];
+TypeError: cannot concatenate 'str' and 'long' objects
+2015-03-29 09:24:52,161 [Thread-5:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 31, in access
+    +'&code='+request[code];
+TypeError: cannot concatenate 'str' and 'long' objects
+2015-03-29 13:25:47,207 [Thread-6:-1243612352] [django.request:143] [WARNING]- Not Found: /http://www.baidu.com/
+2015-03-29 13:27:44,391 [Thread-7:-1243612352] [django.request:143] [WARNING]- Not Found: /muieblackcat
+2015-03-29 13:27:45,906 [Thread-8:-1243612352] [django.request:143] [WARNING]- Not Found: /phpmyadmin/scripts/setup.php
+2015-03-29 14:08:10,531 [Thread-10:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 31, in access
+    +'&code='+request[code];
+TypeError: cannot concatenate 'str' and 'long' objects
+2015-03-29 14:08:11,044 [Thread-11:-1243612352] [django.request:143] [WARNING]- Not Found: /favicon.ico
+2015-03-29 14:09:45,638 [Thread-4:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 31, in access
+    +'&code='+request[code];
+NameError: global name 'code' is not defined
+2015-03-29 14:11:05,789 [Thread-2:-1243305152] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 130, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view soahw.views.access didn't return an HttpResponse object. It returned None instead.
+2015-03-29 14:11:08,123 [Thread-3:-1243305152] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 130, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view soahw.views.access didn't return an HttpResponse object. It returned None instead.
+2015-03-29 14:11:16,879 [Thread-6:-1243305152] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 130, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view soahw.views.access didn't return an HttpResponse object. It returned None instead.
+2015-03-29 14:13:34,797 [Thread-7:-1243305152] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 130, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view soahw.views.access didn't return an HttpResponse object. It returned None instead.
+2015-03-29 14:13:35,496 [Thread-8:-1243305152] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 130, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view soahw.views.access didn't return an HttpResponse object. It returned None instead.
+2015-03-29 14:13:45,929 [Thread-9:-1243305152] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 130, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view soahw.views.access didn't return an HttpResponse object. It returned None instead.
+2015-03-29 14:14:42,569 [Thread-2:-1243874496] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 45, in access
+    if response is not None:
+UnboundLocalError: local variable 'response' referenced before assignment
+2015-03-29 15:01:59,048 [Thread-2:-1243088064] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 35, in access
+    response=urllib2.urlopen(url)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 402, in open
+    req = meth(req)
+  File "/usr/lib/python2.7/urllib2.py", line 1113, in do_request_
+    raise URLError('no host given')
+URLError: <urlopen error no host given>
+2015-03-29 15:04:05,823 [Thread-2:-1243874496] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 34, in access
+    response=urllib2.urlopen(url)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 402, in open
+    req = meth(req)
+  File "/usr/lib/python2.7/urllib2.py", line 1113, in do_request_
+    raise URLError('no host given')
+URLError: <urlopen error no host given>
+2015-03-29 15:04:15,636 [Thread-5:-1243874496] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 34, in access
+    response=urllib2.urlopen(url)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 402, in open
+    req = meth(req)
+  File "/usr/lib/python2.7/urllib2.py", line 1113, in do_request_
+    raise URLError('no host given')
+URLError: <urlopen error no host given>
+2015-03-29 15:23:39,306 [Thread-5:-1243043008] [django.request:143] [WARNING]- Not Found: /http://www.baidu.com/
+2015-03-29 15:30:21,862 [Thread-3:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 31, in access
+    httpConnection.request('get',url)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-29 15:39:32,087 [Thread-3:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 30, in access
+    httpConnection.request('post',url)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-29 16:02:32,624 [Thread-3:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 32, in access
+    httpConnection.request('post','/oauth2/access_token',params)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-29 16:11:39,087 [Thread-3:-1243874496] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 29, in access
+    httpConnection.request('post','/oauth2/access_token',headers)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-29 16:23:30,950 [Thread-3:-1243874496] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 29, in access
+    response=urllib2.urlopen(url,urllib2.urlencode(para))
+AttributeError: 'module' object has no attribute 'urlencode'
+2015-03-29 16:24:10,756 [Thread-3:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 29, in access
+    response=urllib2.urlopen(url,urllib.urlencode(para))
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 410, in open
+    response = meth(req, response)
+  File "/usr/lib/python2.7/urllib2.py", line 523, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python2.7/urllib2.py", line 448, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 531, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+2015-03-29 16:25:47,101 [Thread-4:-1243043008] [django.request:143] [WARNING]- Not Found: /vip163mx00.mxmail.netease.com:25
+2015-03-29 18:54:03,642 [Thread-6:-1243043008] [django.request:143] [WARNING]- Not Found: /http://24x7-allrequestsallowed.com/
+2015-03-29 19:39:29,047 [Thread-7:-1243043008] [django.request:143] [WARNING]- Not Found: /http://www.baidu.com/
+2015-03-29 20:51:12,472 [Thread-8:-1243043008] [django.request:143] [WARNING]- Not Found: /vip163mx00.mxmail.netease.com:25
+2015-03-30 00:21:56,635 [Thread-10:-1243043008] [django.request:143] [WARNING]- Not Found: /favicon.ico
+2015-03-30 00:22:01,822 [Thread-12:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 29, in access
+    response=urllib2.urlopen(url,urllib.urlencode(para))
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 410, in open
+    response = meth(req, response)
+  File "/usr/lib/python2.7/urllib2.py", line 523, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python2.7/urllib2.py", line 448, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 531, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+2015-03-30 00:28:46,338 [Thread-2:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/middleware/common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/soahw/soahw/urls.py", line 15, in <module>
+    url(r'^access/',access),
+NameError: name 'access' is not defined
+2015-03-30 00:29:57,637 [Thread-3:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 27, in access
+    response=urllib2.urlopen(url,urllib.urlencode(para))
+  File "/usr/lib/python2.7/urllib.py", line 1318, in urlencode
+    raise TypeError
+TypeError: not a valid non-string sequence or mapping object
+2015-03-30 00:30:18,350 [Thread-4:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 27, in access
+    response=urllib2.urlopen(url,urllib.urlencode(para))
+  File "/usr/lib/python2.7/urllib.py", line 1318, in urlencode
+    raise TypeError
+TypeError: not a valid non-string sequence or mapping object
+2015-03-30 00:30:25,729 [Thread-7:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 27, in access
+    response=urllib2.urlopen(url,urllib.urlencode(para))
+  File "/usr/lib/python2.7/urllib.py", line 1318, in urlencode
+    raise TypeError
+TypeError: not a valid non-string sequence or mapping object
+2015-03-30 00:32:37,129 [Thread-2:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 27, in access
+    response=urllib2.urlopen(url,para)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 410, in open
+    response = meth(req, response)
+  File "/usr/lib/python2.7/urllib2.py", line 523, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python2.7/urllib2.py", line 448, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 531, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+2015-03-30 00:36:12,658 [Thread-2:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 28, in access
+    response=urllib2.urlopen(req)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 410, in open
+    response = meth(req, response)
+  File "/usr/lib/python2.7/urllib2.py", line 523, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python2.7/urllib2.py", line 448, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 531, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+2015-03-30 00:36:16,332 [Thread-3:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 28, in access
+    response=urllib2.urlopen(req)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 410, in open
+    response = meth(req, response)
+  File "/usr/lib/python2.7/urllib2.py", line 523, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python2.7/urllib2.py", line 448, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 531, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+2015-03-30 00:36:17,611 [Thread-4:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 28, in access
+    response=urllib2.urlopen(req)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 410, in open
+    response = meth(req, response)
+  File "/usr/lib/python2.7/urllib2.py", line 523, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python2.7/urllib2.py", line 448, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 531, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+2015-03-30 00:44:43,540 [Thread-2:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 29, in access
+    connection=httplib.HTTPConnection(burl)
+  File "/usr/lib/python2.7/httplib.py", line 704, in __init__
+    self._set_hostport(host, port)
+  File "/usr/lib/python2.7/httplib.py", line 732, in _set_hostport
+    raise InvalidURL("nonnumeric port: '%s'" % host[i+1:])
+InvalidURL: nonnumeric port: '//api.weibo.com'
+2015-03-30 00:44:45,141 [Thread-3:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 29, in access
+    connection=httplib.HTTPConnection(burl)
+  File "/usr/lib/python2.7/httplib.py", line 704, in __init__
+    self._set_hostport(host, port)
+  File "/usr/lib/python2.7/httplib.py", line 732, in _set_hostport
+    raise InvalidURL("nonnumeric port: '%s'" % host[i+1:])
+InvalidURL: nonnumeric port: '//api.weibo.com'
+2015-03-30 00:44:48,551 [Thread-4:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 29, in access
+    connection=httplib.HTTPConnection(burl)
+  File "/usr/lib/python2.7/httplib.py", line 704, in __init__
+    self._set_hostport(host, port)
+  File "/usr/lib/python2.7/httplib.py", line 732, in _set_hostport
+    raise InvalidURL("nonnumeric port: '%s'" % host[i+1:])
+InvalidURL: nonnumeric port: '//api.weibo.com'
+2015-03-30 00:45:23,482 [Thread-2:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 30, in access
+    connection.request('post',surl,body=para,headers=headers)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-30 00:45:24,115 [Thread-3:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 30, in access
+    connection.request('post',surl,body=para,headers=headers)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-30 01:01:44,199 [Thread-2:-1243874496] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 30, in access
+    connection.request('post',surl,body=para)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-30 01:01:46,324 [Thread-3:-1243874496] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 30, in access
+    connection.request('post',surl,body=para)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-30 01:15:43,003 [Thread-2:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 31, in access
+    connection.request('post',surl,body=para,headers=headers)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-30 01:15:46,491 [Thread-3:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 31, in access
+    connection.request('post',surl,body=para,headers=headers)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-30 01:20:56,108 [Thread-2:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 30, in access
+    addr=socket.gethostbyname(burl)
+gaierror: [Errno -2] Name or service not known
+2015-03-30 01:20:57,032 [Thread-3:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 30, in access
+    addr=socket.gethostbyname(burl)
+gaierror: [Errno -2] Name or service not known
+2015-03-30 01:27:57,154 [Thread-2:-1243305152] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 33, in access
+    val=json.loads(response.read())
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+2015-03-30 01:31:34,443 [Thread-2:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 33, in access
+    return HttpResponse(response['access_token'])
+AttributeError: HTTPResponse instance has no attribute '__getitem__'
+2015-03-30 01:31:35,156 [Thread-3:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 33, in access
+    return HttpResponse(response['access_token'])
+AttributeError: HTTPResponse instance has no attribute '__getitem__'
+2015-03-30 01:31:35,929 [Thread-4:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 33, in access
+    return HttpResponse(response['access_token'])
+AttributeError: HTTPResponse instance has no attribute '__getitem__'
+2015-03-30 01:35:52,132 [Thread-2:-1243874496] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 33, in access
+    return HttpResponse(response.headers())
+AttributeError: HTTPResponse instance has no attribute 'headers'
+2015-03-30 01:36:20,432 [Thread-2:-1244091584] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 33, in access
+    return HttpResponse(response.headers)
+AttributeError: HTTPResponse instance has no attribute 'headers'
+2015-03-30 01:36:36,857 [Thread-3:-1244091584] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 33, in access
+    return HttpResponse(response.headers)
+AttributeError: HTTPResponse instance has no attribute 'headers'
+2015-03-30 01:38:37,601 [Thread-4:-1244091584] [django.request:143] [WARNING]- Not Found: /http://www.baidu.com/
+2015-03-30 05:04:54,600 [Thread-9:-1244091584] [django.request:143] [WARNING]- Not Found: /http://www.baidu.com/
+2015-03-30 05:25:55,382 [Thread-10:-1244091584] [django.request:143] [WARNING]- Not Found: /vip163mx00.mxmail.netease.com:25
+2015-03-30 05:38:19,551 [Thread-13:-1244091584] [django.request:143] [WARNING]- Not Found: /favicon.ico
