@@ -22,12 +22,12 @@ def access(request):
         data={'client_id':client_id, 'client_secret':client_secret,\
                  'grant_type':'authorization_code', 'redirect_uri':'http://101.200.81.62/access/',\
                  'code':request.GET['code']}
-        host='https://api.weibo.com'
+        host='api.weibo.com'
         url='/oauth2/access_token'
         para=urllib.urlencode(data)
-        headers={'Content-Type':'application/x-www-form-urlencoded','Connection':'Keep-Alive'}
+        headers={'Content-type':'application/x-www-form-urlencoded','Accept':'text/plain'}
         addr=socket.gethostbyname(host)
-        con=httplib.HTTPConnection(addr,80,timeout=3)
+        con=httplib.HTTPConnection(addr)
         con.request('POST',url,para,headers)
         response=con.getresponse()
         return HttpResponse(response.status)

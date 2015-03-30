@@ -597,3 +597,101 @@ AttributeError: HTTPResponse instance has no attribute 'headers'
 2015-03-30 05:04:54,600 [Thread-9:-1244091584] [django.request:143] [WARNING]- Not Found: /http://www.baidu.com/
 2015-03-30 05:25:55,382 [Thread-10:-1244091584] [django.request:143] [WARNING]- Not Found: /vip163mx00.mxmail.netease.com:25
 2015-03-30 05:38:19,551 [Thread-13:-1244091584] [django.request:143] [WARNING]- Not Found: /favicon.ico
+2015-03-30 07:25:07,895 [Thread-4:-1243043008] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 29, in access
+    addr=socket.gethostbyname(host)
+gaierror: [Errno -2] Name or service not known
+2015-03-30 07:28:33,932 [Thread-3:-1243874496] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 30, in access
+    con.request('POST',url,para,headers)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-30 07:35:39,756 [Thread-4:-1243874496] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 30, in access
+    con.request('POST',url,para,headers)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-30 07:38:35,281 [Thread-2:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 30, in access
+    con.request('POST',url,data,headers)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-30 07:38:39,416 [Thread-3:-1243612352] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 30, in access
+    con.request('POST',url,data,headers)
+  File "/usr/lib/python2.7/httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+gaierror: [Errno -2] Name or service not known
+2015-03-30 07:40:07,237 [Thread-2:-1243874496] [django.request:231] [ERROR]- Internal Server Error: /access/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/soahw/soahw/views.py", line 29, in access
+    addr=socket.gethostbyname(host)
+gaierror: [Errno -2] Name or service not known
