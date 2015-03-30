@@ -38,7 +38,7 @@ def access(request):
     if request.GET.has_key('code'):
         data={'grant_type':'authorization_code', 'redirect_uri':'http://101.200.81.62/access/',\
               'code':request.GET['code']}
-        host='https://api.weibo.com/oauth2/access_token'
+        url='https://api.weibo.com/oauth2/access_token'
         para=urllib.urlencode(data)
         req=urllib2.Request(url,para)
         req.add_header('client_id',client_id)

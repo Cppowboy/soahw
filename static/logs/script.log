@@ -695,3 +695,7 @@ Traceback (most recent call last):
   File "/root/soahw/soahw/views.py", line 29, in access
     addr=socket.gethostbyname(host)
 gaierror: [Errno -2] Name or service not known
+2015-03-30 09:19:06,569 [Thread-6:-1243612352] [django.request:143] [WARNING]- Not Found: /vip163mx01.mxmail.netease.com:25
+2015-03-30 12:28:59,419 [Thread-8:-1243612352] [django.request:143] [WARNING]- Not Found: /http://www.baidu.com/
+2015-03-30 12:40:13,432 [Thread-9:-1243612352] [django.request:143] [WARNING]- Not Found: /http://www.baidu.com/
+2015-03-30 12:42:33,969 [Thread-3:-1243305152] [django.request:143] [WARNING]- Not Found: /favicon.ico
