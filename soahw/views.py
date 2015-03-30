@@ -26,11 +26,10 @@ def access(request):
         url='/oauth2/access_token'
         para=urllib.urlencode(data)
         headers={'Content-Type':'application/x-www-form-urlencoded','Connection':'Keep-Alive'}
-        try:
-            addr=socket.gethostbyname(host)
-            con=httplib.HTTPConnection(addr,80,timeout=3)
-            con.request('POST',url,para,headers)
-            response=con.getresponse()
+        addr=socket.gethostbyname(host)
+        con=httplib.HTTPConnection(addr,80,timeout=3)
+        con.request('POST',url,para,headers)
+        response=con.getresponse()
         return HttpResponse(response.status)
     else:
         return HttpResponse('can not find code')
