@@ -38,17 +38,15 @@ def access(request):
     if request.GET.has_key('code'):
         data={'grant_type':'authorization_code', 'redirect_uri':'http://101.200.81.62/access/',\
               'code':request.GET['code']}
-        host='api.weibo.com'
-        url='/oauth2/access_token'
+        host='https://api.weibo.com/oauth2/access_token'
         para=urllib.urlencode(data)
-        headers={'client_id':client_id, 'client_secret':client_secret}
-        addr=socket.gethostbyname(host)
-        con=httplib.HTTPConnection(addr)
-        con.request('POST',url,para,headers)
-        response=con.getresponse()
-        return HttpResponse(response.status)
+        req=urllib2.Request(url,para)
+        req.add_header('client_id',client_id)
+        req.add_header('client_secret',client_secret)
+        resp = urllib2.urlopen(req, timeout=5)
+        return HttpResponse(resp.read())
     else:
-        return HttpResponse('can not find code')    
+        return HttpResponse('can not find code')
 
 def posts(request):
     return HttpResponse('Post Page')
